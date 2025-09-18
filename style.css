@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Navbar using Flexbox */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  background-color: #333;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  padding: 14px 20px;
+  display: block;
+}
+
+.navbar a:hover {
+  background-color: #575757;
+  border-radius: 4px;
+}
+
+/* Main Layout using Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Content */
+.content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Card Container using Flexbox */
+.card-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: #e0e0e0;
+  padding: 20px;
+  flex: 1 1 150px; /* flexible width, minimum 150px */
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* stack sidebar and content */
+  }
+
+  .navbar ul {
+    flex-direction: column;
+  }
+
+  .card-container {
+    flex-direction: column;
+  }
+}
